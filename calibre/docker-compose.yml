@@ -14,6 +14,19 @@ services:
       - /mnt/RAID/public/eBooks:/mnt/eBooks
     restart: unless-stopped
 
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+      - OATHLIB_RELAX_TOKEN_SCOPE=1
+    volumes:
+      - ./calibre-web-config:/config
+      - /mnt/RAID/public/eBooks:/books
+    restart: unless-stopped
+
 networks:
   default:
     external: true
