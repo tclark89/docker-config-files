@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - ./config:/config
+      - ./calibre-config:/config
       - /mnt/RAID/public/eBooks:/mnt/eBooks
     restart: unless-stopped
 
