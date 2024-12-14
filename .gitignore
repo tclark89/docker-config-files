@@ -1,3 +1,6 @@
 homepage/config/logs/
 radarr/config/
 sonarr/config/
+tdarr/configs
+tdarr/logs
+tdarr/server
