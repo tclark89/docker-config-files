@@ -1,6 +1,7 @@
 calibre/calibre-config
 calibre/calibre-web-config
 homepage/config/logs/
+portainer/data
 radarr/config/
 sonarr/config/
 tdarr/configs
